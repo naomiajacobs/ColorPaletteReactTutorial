@@ -1,0 +1,151 @@
+/* Reset some default styles for a cleaner look */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a modern font */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Style the header with teal background and white text */
+header {
+  background-color: #53b5b0; /* Teal color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Create a flexible main section that grows to fill available space */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5fdfd; /* Light teal color */
+  display: flex;
+  flex-direction: row; /* Change to row for two columns */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Style the footer with teal background */
+footer {
+  background-color: #53b5b0; /* Teal color */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.attribution {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the new section */
+.palette-section {
+  flex: 1; /* Take up the remaining space */
+  padding: 20px; /* Add padding within the palette section */
+  background-color: #f5fdfd; /* Light teal color */
+  margin-left: 20px; /* Add margin to create space between sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+/* Container for the color boxes */
+.color-box-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Styles for each color box */
+.color-box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff88c2; /* A girly pink color */
+  margin: 0 10px; /* Add some space between the boxes */
+}
+
+/* Styles for the "Randomize" button */
+.randomize-button {
+  padding: 10px 20px;
+  background-color: #53b5b0; /* Teal color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.palette-history {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #f5fdfd; /* Light teal color */
+  padding: 20px; /* Add padding within the sidebar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Scroll when content exceeds the max height */
+}
+
+/* Styles for the palette history list */
+.palette-set {
+  list-style-type: none;
+  padding: 0;
+}
+
+.palette-set li {
+  margin-bottom: 10px;
+}
+
+
+/* Styles for the mini squares */
+.mini-square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.copy-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-image: url('../public/copy-icon.png'); /* Add your copy icon image */
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent icon repetition */
+  vertical-align: middle; /* Center vertically with other palette items */
+  border: none; /* Remove the border around the icon */
+  padding: 0; /* Remove any padding */
+  background-color: transparent; /* Make background transparent */
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Styles for the delete icon */
+.delete-icon {
+  background-image: url('../public/trash-icon.png'); /* Add your delete icon image */
+  background-size: cover;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle; /* Center vertically with other palette items */
+}
